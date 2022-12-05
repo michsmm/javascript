@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste JavaScript</title>
+    <style>
+        div {
+            
+            border: 7px solid rgb(9, 7, 7);
+            border-radius: 30px;
+            margin: 50px;
+            box-shadow: 2px 2px 2px 3px rgba(0,0,0,.5);
+        }
+    </style>
+    <div>
+    <script>
+
+        function acendeLampada() {
+            document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";
+        }  
+        
+        function apagaLampada() {
+            document.getElementById("luz").src= "_imagens/lampada-apagada.jpg";
+
+        }
+
+        function quebraLampada() {
+            document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+        }
+        
+    </script>
+</head>
+<body style="text-align:center; color:rgb(10, 143, 220)">
+    <h1>Acenda a Lâmpada</h1>
+    <img src= "_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()">
+    
+    <script>
+    
+    </script>
+</div>
+</body>
+</html>
